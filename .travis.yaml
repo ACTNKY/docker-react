@@ -1,4 +1,5 @@
-language: generic
+#language: generic
+language: node_js
 
 sudo: required
 services:
@@ -8,5 +9,5 @@ before_install:
   - docker build -t ACTNKY/docker-react -f Dockerfile.dev .
 
 script:
-#  - docker run -e CI=true ACTNKY/docker-react npm run test
-  - docker run ACTNKY/docker-react npm run test -- --coverage
+  - docker run -e CI=true ACTNKY/docker-react npm run test
+#  - docker run ACTNKY/docker-react npm run test -- --coverage
