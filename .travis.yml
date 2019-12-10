@@ -10,7 +10,7 @@ before_install:
 
 script:
 #  - docker run -e CI=true actnky/docker-react npm run test
-  - docker run ACTNKY/docker-react npm run test -- --coverage
+  - docker run actnky/docker-react npm run test -- --coverage
 
 deploy:
   edge: true
