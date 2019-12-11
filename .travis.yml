@@ -29,8 +29,8 @@ script:
 
 notifications:
   slack: ardacetinkaya:gix5eD7jtdAHzj60LP3ZeZlt
-    on_success: always
-    on_failure: always
-    on_pull_requests: always
+    #on_success: always
+    #on_failure: always
+    #on_pull_requests: always
     
-#Updated travis.yml v6.5
+#Updated travis.yml v6.6
