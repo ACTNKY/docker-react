@@ -33,6 +33,5 @@ notifications:
     on_failure: always
     on_pull_requests: always
     
-#Updated travis.yml v6.1
-
+#Updated travis.yml v6.2
 
