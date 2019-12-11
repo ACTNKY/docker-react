@@ -9,8 +9,8 @@ before_install:
   - docker build -t actnky/docker-react -f Dockerfile.dev .
 
 script:
-#  - docker run -e CI=true actnky/docker-react npm run test
-  - docker run actnky/docker-react npm run test -- --coverage
+  - docker run -e CI=true actnky/docker-react npm run test
+#  - docker run actnky/docker-react npm run test -- --coverage
 
 #deploy:
 #  edge: true
@@ -33,5 +33,5 @@ notifications:
     on_failure: always
     on_pull_requests: always
     
-#Updated travis.yml v6.0
+#Updated travis.yml v6.1
 
