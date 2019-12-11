@@ -34,7 +34,7 @@ notifications:
     on_pull_requests: false
     travis encrypt "ardacetinkaya:gix5eD7jtdAHzj60LP3ZeZlt" --add notifications.slack
 
-#Updated travis.yml v5.6
+#Updated travis.yml v5.7
 
     
 
