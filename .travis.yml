@@ -28,13 +28,13 @@ script:
 #    secure: "$AWS_SECRET_KEY"
 
 notifications:
-  slack:
+  slack: travis encrypt "ardacetinkaya:gix5eD7jtdAHzj60LP3ZeZlt" --add notifications.slack
     on_success: never
     on_failure: always
-    on_pull_requests: false
-    travis encrypt "ardacetinkaya:gix5eD7jtdAHzj60LP3ZeZlt" --add notifications.slack
+    on_pull_requests: always
+    
 
-#Updated travis.yml v5.7
+#Updated travis.yml v5.8
 
     
 
