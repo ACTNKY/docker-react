@@ -9,8 +9,8 @@ before_install:
   - docker build -t actnky/docker-react -f Dockerfile.dev .
 
 script:
-#  - docker run -e CI=true actnky/docker-react npm run test
-  - docker run actnky/docker-react npm run test -- --coverage
+  - docker run -e CI=true actnky/docker-react npm run test
+#  - docker run actnky/docker-react npm run test -- --coverage
 
 #deploy:
 #  edge: true
@@ -28,10 +28,9 @@ script:
 #    secure: "$AWS_SECRET_KEY"
 
 notifications:
-  slack: travis encrypt "ardacetinkaya:gix5eD7jtdAHzj60LP3ZeZlt" --add notifications.slack
-    on_success: always
-    on_failure: always
-    on_pull_requests: always
+  slack: ardacetinkaya:gix5eD7jtdAHzj60LP3ZeZlt
+    #on_success: always
+    #on_failure: always
+    #on_pull_requests: always
     
-#Updated travis.yml v5.8    
-
+#Updated travis.yml v6.6
